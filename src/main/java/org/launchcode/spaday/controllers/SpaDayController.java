@@ -22,6 +22,11 @@ public class SpaDayController {
         newClient.setAppropriateFacials(skintype);
         model.addAttribute("client" , newClient);
 
+        model.addAttribute("name", name);
+        model.addAttribute("skintype", skintype);
+        model.addAttribute("manipedi", manipedi);
+        model.addAttribute("appropriateFacials", appropriateFacials);
+
         return "menu";
     }
 }
